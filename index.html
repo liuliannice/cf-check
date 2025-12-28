@@ -107,7 +107,7 @@ function isWebView(){
 /* ================= 检测当前浏览器 ================= */
 const ua = navigator.userAgent;
 let blocked = blacklist.find(b => b.ua.test(ua));
-if(!blocked && isWebView()) blocked = {name:'WebView/非标准浏览器'};
+
 
 /* ================= 校验动画文字 ================= */
 const steps = [
